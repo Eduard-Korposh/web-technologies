@@ -1,0 +1,26 @@
+a {
+    color: purple;
+}
+
+.main {
+    color: green;
+}
+ul li ul {
+    list-style-type: none;
+}
+
+.berries {
+    list-style-type: square;
+}
+
+.veg {
+    list-style-image: url("success.png");
+}
+
+.berries a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}

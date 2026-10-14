@@ -1,0 +1,50 @@
+div {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+
+h3 {
+    font-style: italic;
+}
+
+hr {
+    width: 70%;
+    height: 4px;
+    border: none;
+    background-color: green;
+}
+
+.product {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#footer {
+    font-family: "Courier New", monospace;
+    font-style: italic;
+}
