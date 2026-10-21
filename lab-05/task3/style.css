@@ -1,0 +1,65 @@
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Verdana, sans-serif;
+
+  color: rgb(33, 47, 45);
+  background-color: rgb(236, 246, 243);
+}
+
+div {
+  width: 700px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+fieldset {
+  background-color: rgb(255, 255, 255);
+}
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: rgb(15, 118, 110);
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  color: inherit;
+  background-color: rgb(244, 250, 248);
+}
+
+::placeholder {
+  font-style: italic;
+
+  color: rgb(110, 140, 135);
+}
+
+button {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button[type="submit"] {
+  color: rgb(255, 255, 255);
+  background-color: rgb(15, 118, 110);
+}
+
+button[type="reset"] {
+  color: rgb(15, 118, 110);
+  background-color: rgb(204, 232, 226);
+}

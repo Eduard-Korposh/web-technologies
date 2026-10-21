@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-sizing, overflow, display</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Властивості box-sizing, overflow і display</h1>
+
+  <section class="sizing-demo">
+    <h2>1. box-sizing</h2>
+    <div>
+      box-sizing: content-box<br>
+      Загальна ширина:<br>
+      300 + 2 × 20 + 2 × 5 = 350px
+    </div>
+    <div>
+      box-sizing: border-box<br>
+      Загальна ширина: 300px<br>
+      (вміст: 300 − 2 × 20 − 2 × 5 = 250px)
+    </div>
+  </section>
+
+  <section class="overflow-demo">
+    <h2>2. overflow</h2>
+    <div>
+      overflow: visible<br>
+      Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
+    </div>
+    <div>
+      overflow: hidden<br>
+      Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
+    </div>
+    <div>
+      overflow: scroll<br>
+      Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
+    </div>
+    <div>
+      overflow: auto<br>
+      Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
+    </div>
+  </section>
+
+  <section class="display-demo">
+    <h2>3. display</h2>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Послуги</a></li>
+        <li><a href="#">Портфоліо</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+  </section>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(27, 42, 65);
+  background-image: url("img/mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  box-sizing: border-box;
+  max-width: 900px;
+  min-width: 320px;
+  /* Коли вікно браузера вужче за 320px, контейнер не стискається
+     менше ніж до 320px: він перестає вміщатися у вікно, частина
+     вмісту виходить за правий край, і з'являється горизонтальна
+     смуга прокрутки. */
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.tags-demo div {
+  display: inline;
+  width: 200px;
+  height: 100px;
+  /* width і height не діють: після display: inline елемент div став
+     рядковим, а розмір рядкового елемента визначається лише його
+     вмістом (текстом), тому ширина і висота ігноруються. */
+
+  background-color: rgb(185, 214, 240);
+}
+
+.tags-demo span {
+  display: block;
+  width: 150px;
+
+  background-color: rgb(204, 232, 226);
+}
+
+.repeat-demo div,
+.size-demo div,
+.scroll-demo div {
+  margin-bottom: 20px;
+}
+
+.repeat-demo div {
+  height: 200px;
+
+  background-color: rgb(235, 242, 250);
+  background-image: url("img/star.svg");
+}
+
+.repeat-demo div:nth-of-type(1) {
+  background-repeat: repeat-x;
+}
+
+.repeat-demo div:nth-of-type(2) {
+  background-repeat: repeat-y;
+}
+
+/* Різниця між space і round: обидва значення розміщують у блоці лише
+   цілу кількість копій картинки. space не змінює розмір картинки,
+   а залишок місця ділить на рівні проміжки між копіями. round не
+   залишає проміжків, а розтягує або стискає кожну копію так, щоб
+   ціла кількість картинок заповнила блок упритул. */
+.repeat-demo div:nth-of-type(3) {
+  background-repeat: space;
+}
+
+.repeat-demo div:nth-of-type(4) {
+  background-repeat: round;
+}
+
+.size-demo div {
+  width: 300px;
+  height: 200px;
+
+  background-image: url("img/tower.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid rgb(27, 42, 65);
+}
+
+.size-demo div:nth-of-type(1) {
+  background-size: contain;
+}
+
+.size-demo div:nth-of-type(2) {
+  background-size: cover;
+}
+
+.scroll-demo div {
+  max-height: 150px;
+  overflow: auto;
+
+  background-color: rgb(172, 187, 175);
+  background-image: url("img/tower.jpg");
+  background-size: cover;
+}
+
+/* scroll (значення за замовчуванням): фон закріплений за самим блоком.
+   Під час прокручування сторінки фон рухається разом із блоком, але
+   коли прокручуєш текст усередині блоку, текст рухається, а фон
+   залишається на місці.
+   local: фон закріплений за вмістом блоку, тому під час прокручування
+   тексту всередині блоку фон прокручується разом із текстом. */
+.scroll-demo div:nth-of-type(1) {
+  background-attachment: scroll;
+}
+
+.scroll-demo div:nth-of-type(2) {
+  background-attachment: local;
+}

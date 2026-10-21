@@ -1,0 +1,44 @@
+div {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding: 15px;
+}
+
+div:nth-of-type(1) {
+  background-image: linear-gradient(
+    45deg,
+    rgb(209, 196, 233) 25%,
+    rgb(179, 157, 219) 25%,
+    rgb(179, 157, 219) 50%,
+    rgb(209, 196, 233) 50%,
+    rgb(209, 196, 233) 75%,
+    rgb(179, 157, 219) 75%
+  );
+  background-size: 40px 40px;
+}
+
+div:nth-of-type(2) {
+  background-image: linear-gradient(rgba(126, 87, 194, 0.3) 50%, transparent 50%),
+                    linear-gradient(90deg, rgba(126, 87, 194, 0.3) 50%, transparent 50%);
+  background-size: 40px 40px;
+}
+
+div:nth-of-type(3) {
+  background-image: radial-gradient(
+    circle farthest-corner at 30px 20px,
+    rgb(237, 231, 246) 0%,
+    rgb(179, 157, 219) 40%,
+    rgb(94, 53, 177) 100%
+  );
+}
+
+div:nth-of-type(4) {
+  background-color: rgb(179, 157, 219);
+  background-image: linear-gradient(to top, rgba(69, 39, 160, 0.8), transparent);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 50%;
+}
