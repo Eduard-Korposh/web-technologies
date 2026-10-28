@@ -1,47 +1,46 @@
-th,
-td {
-  width: 150px;
-  padding: 20px;
-
+.tariffs {
   text-align: center;
 }
 
-thead th:nth-child(1) {
+.tariffs__cell {
+  width: 150px;
+  padding: 20px;
+}
+
+.tariffs__heading {
   color: rgb(22, 52, 88);
   background-color: rgb(225, 236, 247);
 }
 
-thead th:nth-child(2) {
-  color: rgb(22, 52, 88);
+.tariffs__heading_plan_basic {
   background-color: rgb(189, 213, 238);
 }
 
-thead th:nth-child(3) {
-  color: rgb(22, 52, 88);
+.tariffs__heading_plan_optimal {
   background-color: rgb(140, 180, 222);
 }
 
-thead th:nth-child(4) {
+.tariffs__heading_plan_premium {
   color: rgb(255, 255, 255);
   background-color: rgb(40, 88, 140);
 }
 
-thead th:nth-child(5) {
+.tariffs__heading_plan_pro {
   color: rgb(255, 255, 255);
   background-color: rgb(22, 52, 88);
 }
 
-tbody th {
+.tariffs__feature {
   font-weight: normal;
 
   color: rgb(255, 255, 255);
   background-color: rgb(66, 125, 186);
 }
 
-tbody tr:nth-child(odd) {
+.tariffs__row:nth-child(odd) {
   background-color: rgb(189, 213, 238);
 }
 
-tbody tr:nth-child(even) {
+.tariffs__row:nth-child(even) {
   background-color: rgb(225, 236, 247);
 }

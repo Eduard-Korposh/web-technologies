@@ -9,49 +9,49 @@
 <body>
   <h1>Властивості box-sizing, overflow і display</h1>
 
-  <section class="sizing-demo">
+  <section>
     <h2>1. box-sizing</h2>
-    <div>
+    <div class="size-box size-box_sizing_content">
       box-sizing: content-box<br>
       Загальна ширина:<br>
       300 + 2 × 20 + 2 × 5 = 350px
     </div>
-    <div>
+    <div class="size-box size-box_sizing_border">
       box-sizing: border-box<br>
       Загальна ширина: 300px<br>
       (вміст: 300 − 2 × 20 − 2 × 5 = 250px)
     </div>
   </section>
 
-  <section class="overflow-demo">
+  <section>
     <h2>2. overflow</h2>
-    <div>
+    <div class="overflow-box overflow-box_mode_visible">
       overflow: visible<br>
       Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
     </div>
-    <div>
+    <div class="overflow-box overflow-box_mode_hidden">
       overflow: hidden<br>
       Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
     </div>
-    <div>
+    <div class="overflow-box overflow-box_mode_scroll">
       overflow: scroll<br>
       Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
     </div>
-    <div>
+    <div class="overflow-box overflow-box_mode_auto">
       overflow: auto<br>
       Властивість overflow визначає, що робити з вмістом, який не вміщується в блок заданої висоти: показати його поза межами блоку, обрізати або додати смуги прокрутки. Порівняйте, як поводиться цей текст у кожному з чотирьох блоків.
     </div>
   </section>
 
-  <section class="display-demo">
+  <section>
     <h2>3. display</h2>
     <nav>
-      <ul>
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Послуги</a></li>
-        <li><a href="#">Портфоліо</a></li>
-        <li><a href="#">Контакти</a></li>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Головна</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Про нас</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Послуги</a></li>
+        <li class="menu__item menu__item_hidden"><a class="menu__link" href="#">Портфоліо</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
       </ul>
     </nav>
   </section>

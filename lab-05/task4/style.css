@@ -1,4 +1,4 @@
-div {
+.gradient-block {
   display: inline-block;
   box-sizing: border-box;
   width: 300px;
@@ -7,7 +7,7 @@ div {
   padding: 15px;
 }
 
-div:nth-of-type(1) {
+.gradient-block_type_stripes {
   background-image: linear-gradient(
     45deg,
     rgb(209, 196, 233) 25%,
@@ -20,13 +20,13 @@ div:nth-of-type(1) {
   background-size: 40px 40px;
 }
 
-div:nth-of-type(2) {
+.gradient-block_type_grid {
   background-image: linear-gradient(rgba(126, 87, 194, 0.3) 50%, transparent 50%),
                     linear-gradient(90deg, rgba(126, 87, 194, 0.3) 50%, transparent 50%);
   background-size: 40px 40px;
 }
 
-div:nth-of-type(3) {
+.gradient-block_type_radial {
   background-image: radial-gradient(
     circle farthest-corner at 30px 20px,
     rgb(237, 231, 246) 0%,
@@ -35,7 +35,7 @@ div:nth-of-type(3) {
   );
 }
 
-div:nth-of-type(4) {
+.gradient-block_type_shade {
   background-color: rgb(179, 157, 219);
   background-image: linear-gradient(to top, rgba(69, 39, 160, 0.8), transparent);
   background-repeat: no-repeat;

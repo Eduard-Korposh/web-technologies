@@ -6,54 +6,54 @@
   <title>Анкета</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div>
+<body class="page">
+  <div class="survey">
     <form method="post" enctype="multipart/form-data">
-      <fieldset>
-        <legend>Особисті дані</legend>
+      <fieldset class="survey__group">
+        <legend class="survey__legend">Особисті дані</legend>
         <label for="name">Ім'я:</label>
-        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" tabindex="1" required><br><br>
+        <input class="survey__field" type="text" id="name" name="name" placeholder="Введіть ваше ім'я" tabindex="1" required><br><br>
         <label for="surname">Прізвище:</label>
-        <input type="text" id="surname" name="surname" placeholder="Введіть ваше прізвище" tabindex="2" required><br><br>
+        <input class="survey__field" type="text" id="surname" name="surname" placeholder="Введіть ваше прізвище" tabindex="2" required><br><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Введіть ваш email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}" autocomplete="off" tabindex="3" required><br><br>
+        <input class="survey__field" type="email" id="email" name="email" placeholder="Введіть ваш email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}" autocomplete="off" tabindex="3" required><br><br>
         <label for="birthdate">Дата народження:</label>
-        <input type="date" id="birthdate" name="birthdate" tabindex="4"><br><br>
-        <input type="radio" id="course1" name="course" value="1" tabindex="5">
+        <input class="survey__field" type="date" id="birthdate" name="birthdate" tabindex="4"><br><br>
+        <input class="survey__field" type="radio" id="course1" name="course" value="1" tabindex="5">
         <label for="course1">1 курс</label>
-        <input type="radio" id="course2" name="course" value="2" tabindex="6">
+        <input class="survey__field" type="radio" id="course2" name="course" value="2" tabindex="6">
         <label for="course2">2 курс</label>
-        <input type="radio" id="course3" name="course" value="3" tabindex="7">
+        <input class="survey__field" type="radio" id="course3" name="course" value="3" tabindex="7">
         <label for="course3">3 курс</label>
       </fieldset>
 
-      <fieldset>
-        <legend>Контакти та обліковий запис</legend>
+      <fieldset class="survey__group">
+        <legend class="survey__legend">Контакти та обліковий запис</legend>
         <label for="phone">Телефон:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}" tabindex="8"><br><br>
+        <input class="survey__field" type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}" tabindex="8"><br><br>
         <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" placeholder="6 символів: A-Z, a-z, 0-9" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}" tabindex="9"><br><br>
+        <input class="survey__field" type="password" id="password" name="password" placeholder="6 символів: A-Z, a-z, 0-9" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}" tabindex="9"><br><br>
       </fieldset>
 
-      <fieldset>
-        <legend>Додаткові відомості</legend>
+      <fieldset class="survey__group">
+        <legend class="survey__legend">Додаткові відомості</legend>
         Форма навчання:
-        <input type="radio" id="day" name="studyForm" value="day" tabindex="10" checked>
+        <input class="survey__field" type="radio" id="day" name="studyForm" value="day" tabindex="10" checked>
         <label for="day">Денна</label>
-        <input type="radio" id="extramural" name="studyForm" value="extramural" tabindex="11">
+        <input class="survey__field" type="radio" id="extramural" name="studyForm" value="extramural" tabindex="11">
         <label for="extramural">Заочна</label>
-        <input type="radio" id="distance" name="studyForm" value="distance" tabindex="12">
+        <input class="survey__field" type="radio" id="distance" name="studyForm" value="distance" tabindex="12">
         <label for="distance">Дистанційна</label><br><br>
-        <input type="checkbox" id="prog" name="interests" value="programming" tabindex="13">
+        <input class="survey__field" type="checkbox" id="prog" name="interests" value="programming" tabindex="13">
         <label for="prog">Програмування</label>
-        <input type="checkbox" id="design" name="interests" value="design" tabindex="14">
+        <input class="survey__field" type="checkbox" id="design" name="interests" value="design" tabindex="14">
         <label for="design">Дизайн</label>
-        <input type="checkbox" id="net" name="interests" value="networking" tabindex="15">
+        <input class="survey__field" type="checkbox" id="net" name="interests" value="networking" tabindex="15">
         <label for="net">Мережеві технології</label>
-        <input type="checkbox" id="sport" name="interests" value="sports" tabindex="16">
+        <input class="survey__field" type="checkbox" id="sport" name="interests" value="sports" tabindex="16">
         <label for="sport">Спорт</label><br><br>
         <label for="country">Країна:</label>
-        <select id="country" name="country" tabindex="17">
+        <select class="survey__field" id="country" name="country" tabindex="17">
           <option value="Slovakia">Словаччина</option>
           <option value="Ukraine">Україна</option>
           <option value="Poland" selected>Польща</option>
@@ -61,7 +61,7 @@
           <option value="USA">США</option>
         </select><br><br>
         <label for="languages">Мови програмування:</label><br>
-        <select id="languages" name="languages" tabindex="18" multiple>
+        <select class="survey__field" id="languages" name="languages" tabindex="18" multiple>
           <option value="Python">Python</option>
           <option value="JavaScript">JavaScript</option>
           <option value="Java">Java</option>
@@ -70,7 +70,7 @@
           <option value="PHP">PHP</option>
         </select><br><br>
         <label for="tech">Технології:</label><br>
-        <select id="tech" name="tech" tabindex="19">
+        <select class="survey__field" id="tech" name="tech" tabindex="19">
           <optgroup label="Frontend">
             <option value="HTML">HTML</option>
             <option value="CSS">CSS</option>
@@ -93,7 +93,7 @@
           </optgroup>
         </select><br><br>
         <label for="city">Місто:</label>
-        <input type="text" id="city" name="city" placeholder="Почніть вводити місто" list="cities" tabindex="20">
+        <input class="survey__field" type="text" id="city" name="city" placeholder="Почніть вводити місто" list="cities" tabindex="20">
         <datalist id="cities">
           <option value="Чернівці"></option>
           <option value="Київ"></option>
@@ -102,16 +102,16 @@
         </datalist><br><br>
       </fieldset>
 
-      <fieldset>
-        <legend>Про себе</legend>
+      <fieldset class="survey__group">
+        <legend class="survey__legend">Про себе</legend>
         <label for="about">Розкажіть трохи про себе:</label>
-        <textarea id="about" name="about" placeholder="Розкажіть трохи про себе..." rows="4" cols="50" tabindex="21"></textarea><br><br>
+        <textarea class="survey__field" id="about" name="about" placeholder="Розкажіть трохи про себе..." rows="4" cols="50" tabindex="21"></textarea><br><br>
         <label for="audio">Аудіо:</label>
-        <input type="file" id="audio" name="audio" accept="audio/*" tabindex="22" multiple>
+        <input class="survey__field" type="file" id="audio" name="audio" accept="audio/*" tabindex="22" multiple>
       </fieldset>
 
-      <button type="submit" name="action" value="send" tabindex="23">Надіслати</button>
-      <button type="reset" name="action" value="reset" tabindex="24">Очистити</button>
+      <button class="survey__button survey__button_type_submit" type="submit" name="action" value="send" tabindex="23">Надіслати</button>
+      <button class="survey__button survey__button_type_reset" type="reset" name="action" value="reset" tabindex="24">Очистити</button>
     </form>
   </div>
 </body>

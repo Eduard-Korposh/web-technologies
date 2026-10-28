@@ -1,4 +1,4 @@
-body {
+.page {
   background-color: rgb(27, 42, 65);
   background-image: url("img/mountain.jpg");
   background-repeat: no-repeat;
@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
 }
 
-main {
+.container {
   box-sizing: border-box;
   max-width: 900px;
   min-width: 320px;
@@ -21,7 +21,7 @@ main {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-.tags-demo div {
+.tag {
   display: inline;
   width: 200px;
   height: 100px;
@@ -32,31 +32,31 @@ main {
   background-color: rgb(185, 214, 240);
 }
 
-.tags-demo span {
+.item {
   display: block;
   width: 150px;
 
   background-color: rgb(204, 232, 226);
 }
 
-.repeat-demo div,
-.size-demo div,
-.scroll-demo div {
+.repeat-box,
+.scale-box,
+.scroll-box {
   margin-bottom: 20px;
 }
 
-.repeat-demo div {
+.repeat-box {
   height: 200px;
 
   background-color: rgb(235, 242, 250);
   background-image: url("img/star.svg");
 }
 
-.repeat-demo div:nth-of-type(1) {
+.repeat-box_mode_x {
   background-repeat: repeat-x;
 }
 
-.repeat-demo div:nth-of-type(2) {
+.repeat-box_mode_y {
   background-repeat: repeat-y;
 }
 
@@ -65,15 +65,15 @@ main {
    а залишок місця ділить на рівні проміжки між копіями. round не
    залишає проміжків, а розтягує або стискає кожну копію так, щоб
    ціла кількість картинок заповнила блок упритул. */
-.repeat-demo div:nth-of-type(3) {
+.repeat-box_mode_space {
   background-repeat: space;
 }
 
-.repeat-demo div:nth-of-type(4) {
+.repeat-box_mode_round {
   background-repeat: round;
 }
 
-.size-demo div {
+.scale-box {
   width: 300px;
   height: 200px;
 
@@ -83,15 +83,15 @@ main {
   border: 2px solid rgb(27, 42, 65);
 }
 
-.size-demo div:nth-of-type(1) {
+.scale-box_fit_contain {
   background-size: contain;
 }
 
-.size-demo div:nth-of-type(2) {
+.scale-box_fit_cover {
   background-size: cover;
 }
 
-.scroll-demo div {
+.scroll-box {
   max-height: 150px;
   overflow: auto;
 
@@ -106,10 +106,10 @@ main {
    залишається на місці.
    local: фон закріплений за вмістом блоку, тому під час прокручування
    тексту всередині блоку фон прокручується разом із текстом. */
-.scroll-demo div:nth-of-type(1) {
+.scroll-box_attachment_scroll {
   background-attachment: scroll;
 }
 
-.scroll-demo div:nth-of-type(2) {
+.scroll-box_attachment_local {
   background-attachment: local;
 }

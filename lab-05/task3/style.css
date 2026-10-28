@@ -1,4 +1,4 @@
-body {
+.page {
   font-size: 16px;
   line-height: 1.6;
   font-family: Verdana, sans-serif;
@@ -7,18 +7,18 @@ body {
   background-color: rgb(236, 246, 243);
 }
 
-div {
+.survey {
   width: 700px;
   margin: 0 auto;
 
   text-align: center;
 }
 
-fieldset {
+.survey__group {
   background-color: rgb(255, 255, 255);
 }
 
-legend {
+.survey__legend {
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
@@ -27,39 +27,35 @@ legend {
   color: rgb(15, 118, 110);
 }
 
-input,
-select,
-textarea,
-button {
+.survey__field,
+.survey__button {
   font-size: inherit;
   font-family: inherit;
 }
 
-input,
-select,
-textarea {
+.survey__field {
   color: inherit;
   background-color: rgb(244, 250, 248);
 }
 
-::placeholder {
+.survey__field::placeholder {
   font-style: italic;
 
   color: rgb(110, 140, 135);
 }
 
-button {
+.survey__button {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-button[type="submit"] {
+.survey__button_type_submit {
   color: rgb(255, 255, 255);
   background-color: rgb(15, 118, 110);
 }
 
-button[type="reset"] {
+.survey__button_type_reset {
   color: rgb(15, 118, 110);
   background-color: rgb(204, 232, 226);
 }
