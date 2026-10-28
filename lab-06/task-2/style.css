@@ -1,0 +1,64 @@
+.blocks-canvas {
+    position: relative;
+    width: 800px;
+    height: 520px;
+}
+
+.layout-block {
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid black;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    font-size: 28px;
+    line-height: 116px;
+}
+
+.block-primary {
+    background-color: #00b050;
+    color: black;
+}
+
+.block-secondary {
+    background-color: #558ed5;
+    color: white;
+}
+
+.block-accent {
+    background-color: #604a7b;
+    color: white;
+}
+
+.block-top-left {
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 120px;
+}
+
+.block-top-right {
+    top: 0;
+    left: 410px;
+    width: 390px;
+    height: 120px;
+}
+
+.block-bottom {
+    top: 140px;
+    left: 0;
+    width: 800px;
+    height: 380px;
+}
+
+.reveal-block {
+    opacity: 0;
+}
+
+.block-top-left:hover + .block-top-right,
+.block-top-right:hover {
+    opacity: 1;
+}
+
+.block-top-right:hover + .block-bottom {
+    opacity: 1;
+}
