@@ -1,0 +1,132 @@
+:root {
+    --color-page: #ffffff;
+    --color-card: #ffffff;
+    --color-text: #222222;
+    --color-button: #808080;
+    --color-button-hover: #666666;
+    --color-button-text: #ffffff;
+    --font-card: "Times New Roman", Georgia, serif;
+    --font-button: Arial, sans-serif;
+    --cards-width: 1000px;
+    --cards-gap: 20px;
+    --card-padding: 18px;
+    --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    --image-height: 135px;
+    --image-featured-height: 285px;
+    --text-lines: 8;
+}
+
+.page {
+    max-width: var(--cards-width);
+    margin: 0 auto;
+    padding: 10px;
+    font-family: var(--font-card);
+    color: var(--color-text);
+    background-color: var(--color-page);
+}
+
+.page-title {
+    margin: 0 0 14px;
+    font-size: 22px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: var(--cards-gap);
+}
+
+.card {
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--color-card);
+    box-shadow: var(--card-shadow);
+}
+
+.card-featured {
+    grid-row: span 2;
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    height: var(--image-height);
+    object-fit: cover;
+}
+
+.card-image-featured {
+    height: var(--image-featured-height);
+}
+
+.card-body {
+    padding: var(--card-padding);
+}
+
+.card-title {
+    display: -webkit-box;
+    margin: 0 0 14px;
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card-subtitle {
+    margin: 0 0 12px;
+    font-size: 15px;
+}
+
+.card-text {
+    display: -webkit-box;
+    margin: 0 0 14px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    -webkit-line-clamp: var(--text-lines);
+    -webkit-box-orient: vertical;
+}
+
+.card-button {
+    display: block;
+    padding: 8px;
+    overflow: hidden;
+    font-family: var(--font-button);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-button-text);
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: var(--color-button);
+}
+
+.card-button:hover {
+    background-color: var(--color-button-hover);
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-featured {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --cards-gap: 14px;
+        --image-height: 180px;
+        --image-featured-height: 220px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

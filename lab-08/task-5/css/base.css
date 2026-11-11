@@ -1,0 +1,29 @@
+:root {
+    --color-page: #fff8f7;
+    --color-block: #ffffff;
+    --color-border: #f4533c;
+    --color-text: #222222;
+    --font-main: Arial, sans-serif;
+    --layout-gap: 16px;
+    --bar-height: 50px;
+    --main-min-height: 300px;
+}
+
+.layout {
+    display: grid;
+    gap: var(--layout-gap);
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: var(--layout-gap);
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: var(--color-text);
+    background-color: var(--color-page);
+}
+
+.block {
+    padding: 10px;
+    background-color: var(--color-block);
+    border: 3px solid var(--color-border);
+    border-radius: 5px;
+}

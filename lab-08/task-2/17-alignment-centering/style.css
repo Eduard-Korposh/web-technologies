@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-gap: 20px;
+  height: 500px;
+  border: 10px solid var(--accent);
+  grid-template-columns: repeat(5, 130px);
+  place-items: stretch stretch;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.itm {
+  background: white;
+}
+
+.itm5 {
+  justify-self: center;
+  align-self: center;
+}
